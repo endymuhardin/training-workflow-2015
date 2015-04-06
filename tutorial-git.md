@@ -117,7 +117,10 @@ Berbagai skenario undo:
 
 ## Ambil commit dari upstream
 
-* Command : git fetch <nama-upstream>
+* Command : 
+
+    * Satu upstream saja : `git fetch <nama-upstream>`
+    * Semua upstream : `git fetch --all`
 
 
 ## Merge commit dari upstream ke master di local
@@ -142,8 +145,8 @@ Berbagai skenario undo:
 
 Ini digunakan bila tidak mau mendaftarkan remote dulu, tapi langsung merge
 
-* Remote repo url : git@github.com:mkdika/blog.git
-* Remote branch : tambahan
+* Remote repo url : `git@github.com:mkdika/blog.git`
+* Remote branch : `tambahan`
 
 1. Buat dulu branch untuk integrasi
 
