@@ -114,9 +114,11 @@ Berbagai skenario undo:
 * Command : `git checkout <nama-branch>`
 * Contoh : `git checkout fix125`
 
+
 ## Ambil commit dari upstream
 
 * Command : git fetch <nama-upstream>
+
 
 ## Merge commit dari upstream ke master di local
 
@@ -131,3 +133,43 @@ Berbagai skenario undo:
 3. Merge upstream ke master lokal
 
     ```git merge upstream/master```
+
+4. Push ke remote kita
+
+    ```git push origin master```
+
+## Merge commit dari remote branch
+
+Ini digunakan bila tidak mau mendaftarkan remote dulu, tapi langsung merge
+
+* Remote repo url : git@github.com:mkdika/blog.git
+* Remote branch : tambahan
+
+1. Buat dulu branch untuk integrasi
+
+    ```
+    git branch integrasi-maikel
+    git checkout integrasi-maikel
+    ```
+
+2. Pull dari remote repo
+
+    ```
+    git pull git@github.com:mkdika/blog.git tambahan
+    ```
+
+3. Review dan fix bila perlu
+4. Merge ke master
+
+    ```
+    git checkout master
+    git merge integrasi-maikel
+    ```
+
+5. Push master yang sudah merged
+
+    ```git push origin master```
+
+6. Hapus branch integrasi yang sudah selesai
+
+    ```git branch -d integrasi-maikel```
