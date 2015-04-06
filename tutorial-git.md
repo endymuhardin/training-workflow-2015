@@ -5,7 +5,7 @@
 * Working Folder : folder tempat file-file kita berada
 * Staging Area : wilayah (virtual) untuk perubahan yang **akan** dicommit
 * Commit Area / Local Repository : penyimpanan history di local
-
+* Local Repository : database di local
 
 ## Membuat Repository Baru di Local ##
 
