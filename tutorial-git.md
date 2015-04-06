@@ -59,7 +59,7 @@
     ```
 
 
-# Mendaftarkan remote repository
+## Mendaftarkan remote repository
 
 * Command : ```git remote add <nama-remote> <url-remote>```
 * Contoh : ```git remote add github https://github.com/endymuhardin/training-workflow-2015.git```
@@ -83,3 +83,51 @@
     To git@github.com:endymuhardin/training-workflow-2015.git
        f42d98e..0bec9fc  master -> master
     ```
+
+# Undo #
+
+Berbagai skenario undo:
+
+* Sudah commit, mau commit ulang (misalnya ganti commit message) tanpa mengubah changeset
+
+    `git reset --soft HEAD~1`
+
+* Sudah commit, mau commit ulang dengan changeset yang berbeda
+
+    `git reset --mixed HEAD~1` atau `git reset HEAD~1`
+
+* Sudah commit, mau kembalikan ke kondisi commit sebelumnya
+
+    `git reset --hard HEAD~1`
+
+
+# Branch dan Merge
+
+## Membuat branch
+
+* Command : `git branch <nama-branch>`
+* Contoh : `git branch fix125`
+
+
+## Pindah branch
+
+* Command : `git checkout <nama-branch>`
+* Contoh : `git checkout fix125`
+
+## Ambil commit dari upstream
+
+* Command : git fetch <nama-upstream>
+
+## Merge commit dari upstream ke master di local
+
+1. Pindah dulu ke master
+
+    ```git checkout master```
+
+2. Fetch upstream
+
+    ```git fetch upstream```
+
+3. Merge upstream ke master lokal
+
+    ```git merge upstream/master```
