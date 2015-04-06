@@ -6,6 +6,7 @@
 * Staging Area : wilayah (virtual) untuk perubahan yang **akan** dicommit
 * Commit Area / Local Repository : penyimpanan history di local
 * Local Repository : database di local
+* Remote Repository : database di server lain
 
 ## Membuat Repository Baru di Local ##
 
@@ -38,7 +39,7 @@
 
 * Perintah : `git diff --staged`
 
-# Melihat history perubahan
+## Melihat history perubahan
 
 * Perintah : `git log`
 * Opsi :
@@ -56,3 +57,19 @@
     * db8d961 penjelasan staging area
     * 256111b commit pertama
     ```
+
+
+# Mendaftarkan remote repository
+
+* Command : ```git remote add <nama-remote> <url-remote>```
+* Contoh : ```git remote add github https://github.com/endymuhardin/training-workflow-2015.git```
+
+## Mengganti URL remote repository
+
+* Command : ```git remote set-url <nama-remote> <url-baru>```
+* Contoh : ```git remote set-url github git@github.com:endymuhardin/training-workflow-2015.git```
+
+## Mengupload commit local ke remote 
+
+* Command : ```git push <nama-remote> <branch-yang-mau-diupload>
+* Contoh : ```git push github master```
