@@ -73,3 +73,13 @@
 
 * Command : ```git push <nama-remote> <branch-yang-mau-diupload>
 * Contoh : ```git push github master```
+* Output :
+
+    ```
+    Counting objects: 5, done.
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (3/3), 582 bytes | 0 bytes/s, done.
+    Total 3 (delta 1), reused 0 (delta 0)
+    To git@github.com:endymuhardin/training-workflow-2015.git
+       f42d98e..0bec9fc  master -> master
+    ```
