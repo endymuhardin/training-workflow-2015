@@ -37,3 +37,22 @@
 ## Melihat isi staging area ##
 
 * Perintah : `git diff --staged`
+
+# Melihat history perubahan
+
+* Perintah : `git log`
+* Opsi :
+
+    * `--oneline` : menampilkan satu commit per baris (lebih ringkas)
+    * `--graph` : menampilkan rantai perubahan
+
+* Output :
+
+    ```
+    C:\Users\winvbox\Documents\blog-endy>git log --oneline --graph
+    * 7dc4511 cara melihat staging area
+    * f393673 penjelasan local repo
+    * 60b0679 perintah git
+    * db8d961 penjelasan staging area
+    * 256111b commit pertama
+    ```
