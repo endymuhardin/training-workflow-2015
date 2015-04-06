@@ -71,7 +71,7 @@
 
 ## Mengupload commit local ke remote 
 
-* Command : ```git push <nama-remote> <branch-yang-mau-diupload>
+* Command : ```git push <nama-remote> <branch-yang-mau-diupload>```
 * Contoh : ```git push github master```
 * Output :
 
