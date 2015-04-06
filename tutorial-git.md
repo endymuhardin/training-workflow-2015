@@ -33,3 +33,7 @@
     +* Perintah : `git diff`
     \ No newline at end of file
     ```
+
+## Melihat isi staging area ##
+
+* Perintah : `git diff --staged`
